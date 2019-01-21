@@ -1,0 +1,5 @@
+<template name="new">
+    <block wx:if="{{new}}">
+      <text class='new-tag'>新</text>
+    </block>
+</template>

@@ -1,0 +1,19 @@
+<view class="page-header">
+  <text class="page-header-text">
+    Today In History : {{date}}
+</text>
+</view>
+<view style='text-align:center;'>
+  <view wx:for="{{events}}" wx:for-item="event">
+    <text class='year' selectable="true">
+       {{event.year}}
+    </text>
+    <text class='event'>
+      {{event.title}}
+    </text>
+    <!-- <text class="page__desc" selectable="true">Year:{{event.year}}</text> -->
+    <!-- <view wx:for="{{event.links}}" wx:for-item="keyWord">
+          <text class="page__desc" href="{{keyWord.link}}" selectable="true">{{keyWord.title}}</text>
+        </view> -->
+  </view>
+</view>

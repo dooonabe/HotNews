@@ -1,0 +1,17 @@
+<import src="../itemDetail/itemDetail.wxml" />
+
+<template name="item">
+  <view class='' wx:if="{{seq < 2}}" style='color:red;font-size:46rpx;padding:14rpx'>
+    <template is="itemDetail" data="{{title:title, new_tag:new_tag}}" />
+  </view>
+  <!-- 递减 -->
+  <view class='' wx:elif="{{seq < 3}}" style='color:red;font-size:44rpx;padding:8rpx'>
+    <template is="itemDetail" data="{{title:title, new_tag:new_tag}}" />
+  </view>
+  <view class='' wx:elif="{{seq < 4}}" style='color:red;font-size:42rpx;padding:6rpx'>
+    <template is="itemDetail" data="{{title:title, new_tag:new_tag}}" />
+  </view>
+  <view wx:else style='font-size:36rpx;padding:6rpx'>
+    <template is="itemDetail" data="{{title:title, new_tag:new_tag}}" />
+  </view>
+</template>

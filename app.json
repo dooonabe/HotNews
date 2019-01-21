@@ -1,0 +1,30 @@
+{
+  "pages": [
+    "pages/china/china",
+    "pages/today/today",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/internation/internation",
+    "pages/template/itemDetail/itemDetail",
+    "pages/template/list/list"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/china/china",
+        "text": "Hot News"
+      },
+      {
+        "pagePath": "pages/today/today",
+        "text": "Today In History"
+      }
+    ]
+  }
+}

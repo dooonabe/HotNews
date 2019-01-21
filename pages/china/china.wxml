@@ -1,0 +1,21 @@
+<import src="../template/list/list.wxml" />
+<import src="../template/item/item.wxml" />
+
+
+<!--pages/china/china.wxml-->
+<view class="page-header">
+  <text class="page-header-text">
+    Hot News: {{time.hour}}:{{time.minute}}:{{time.second}}
+  </text>
+</view>
+
+<view class='page-body'>
+  <view class='' wx:for="{{baiduData}}" wx:for-item="event">
+    <navigator url="../template/list/list?title={{event.title}}" hover-class="navigator-hover">
+      <template is="item" data="{{...event}}" />
+    </navigator>
+  </view>
+  <!-- <modal class="" hidden="{{modalHiddden}}" no-cancel bindconfirm="hideModal" bindcancel="hideModal">
+    <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+  </modal> -->
+</view>
