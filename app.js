@@ -37,6 +37,6 @@ App({
     userInfo: null,
     todayUrl: 'https://baike.baidu.com',
     hotNewsUrl: 'https://www.anyknew.com',
-    baiduUrl: 'https://www.baidu.com',
+    baiduUrl: 'http://www.baidu.com',
   }
 })
