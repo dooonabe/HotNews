@@ -1,7 +1,7 @@
 <import src="./new.wxml" />
 <template name="itemDetail">
   <view>
-    <text bindtap='getContent' id="{{title}}" class=''>{{title}}</text>
+    <text bindtap='getList' id="{{title}}" class=''>{{title}}</text>
     <block wx:if="{{new_tag}}">
       <template is="new" data="{{new:true}}" />
     </block>

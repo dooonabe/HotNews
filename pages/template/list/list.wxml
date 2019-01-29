@@ -1,4 +1,7 @@
 <import src="/utils/wxParse/wxParse.wxml"/>
 <view>
   <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+  <!-- <view class="button-wrapper">
+    <button plain="true">next</button>
+  </view> -->
 </view>
