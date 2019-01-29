@@ -17,7 +17,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
-    this.getList(options.title);
+    this.getList(options.id);
   },
 
 
@@ -40,10 +40,11 @@ Page({
   /**
    * 获取新闻详细内容列表
    */
-  getList: function(title) {
-    title = title.replace(/\s/g, "+");
+  getList: function(id) {
+    // 将空格替换为空格
+    // title = title.replace(/\s/g, "+");
     // var url = app.globalData.baiduUrl + "/s?tn=news&rtt=1&bsst=1&wd=" + title + "&cl=2&origin=ps";
-    var url = app.globalData.baiduUrl + "/s?tn=news&rtt=1&bsst=1&wd=" + title;
+    var url = app.globalData.hotNewsUrl + "/go/"+ id;
     var that = this;
     util.httpGet(url, function(data) {
       var urls = [];

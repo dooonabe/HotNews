@@ -11,7 +11,7 @@
 
 <view class='page-body'>
   <view class='' wx:for="{{baiduData}}" wx:for-item="event">
-    <navigator url="../template/list/list?title={{event.title}}" hover-class="navigator-hover">
+    <navigator url="../template/list/list?id={{event.iid}}" hover-class="navigator-hover">
       <template is="item" data="{{...event}}" />
     </navigator>
   </view>
